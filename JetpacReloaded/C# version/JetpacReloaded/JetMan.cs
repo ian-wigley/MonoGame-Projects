@@ -30,7 +30,6 @@ public class JetMan : BaseObject
 
     public void Update(Vector2 vec, SpriteEffects flip)
     {
-        //                   this.m_frame = this.m_frame % 4 + 1;
         Frame = Frame % NumberOfFrames + 1;
         ScreenLocation = vec;
         Rect = new Rectangle(Frame * Width, 0, Width, Height);
